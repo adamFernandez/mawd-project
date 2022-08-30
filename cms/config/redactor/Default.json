@@ -4,7 +4,9 @@
     "formatting",
     "bold",
     "italic",
+    "underline",
     "unorderedlist",
+    "deleted",
     "orderedlist",
     "link",
     "image",
@@ -12,9 +14,12 @@
   ],
   "plugins": [
     "fullscreen",
-    "video",
-    "richvariables"
+    "video"
   ],
+  "formatting": ["p", "br"],
   "linkNewTab": true,
-  "toolbarFixed": true
+  "toolbarFixed": true,
+  "paragraphize": true,
+  "deniedTags": ["br", "p"],
+  "breakline": true
 }

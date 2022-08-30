@@ -1,0 +1,16 @@
+.cookie-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    border-top: 1px solid $alto;
+    display: none;
+    &__layout {
+        display: fixed;
+    }
+    &__text {
+        @include text-block;
+        padding-top: 10px;
+    }
+}

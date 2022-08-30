@@ -1,0 +1,172 @@
+.about {
+  &__hero {
+    background: $cotton-candy;
+    &__title {
+      @include DrukCondensed-160;
+      line-height: 0.9;
+      color: $international-orange;
+      text-transform: uppercase;
+    }
+    &__button {
+      @include FoundersGroteskMono-18;
+      text-transform: uppercase;
+      color: $international-orange;
+      border: 2px solid $international-orange;
+      border-radius: 6px;
+      padding: 10px 20px;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        color: $cotton-candy;
+        background-color: $international-orange;
+        transition: all 0.4s ease-in-out;
+        text-decoration: none;
+      }
+    }
+  }
+  &__our-mission {
+    background: $kaitoke-green;
+    position: relative;
+    padding-bottom: 300px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0px;
+      right: 0px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 100vw 45px 0;
+      border-color: transparent $cotton-candy transparent transparent;
+      @media screen and (max-width: 640px) {
+        border-width: 0 100vw 35px 0;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0px;
+      right: 0px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 200px 100vw;
+      border-color: transparent transparent $white transparent;
+      @media screen and (max-width: 640px) {
+        border-width: 0 0 80px 100vw;
+      }
+    }
+    &__title {
+      @include DrukCondensed-160;
+      line-height: 0.85;
+      color: $cotton-candy;
+      text-transform: uppercase;
+      width: 400px;
+      margin: 0 auto;
+      @media screen and (max-width: 640px) {
+        margin-right: auto;
+        margin-left: 0;
+        text-align: left !important;
+      }
+    }
+    &__text {
+      @include text-block;
+      color: $cotton-candy;
+      font-weight: 100;
+      span {
+        font-family: Helvetica, sans-serif;
+        font-weight: 100;
+        line-height: 1;
+      }
+    }
+    &__subtitle {
+      @include FoundersGroteskMedium-24;
+      color: $cotton-candy;
+    }
+    &__list {
+      @include text-block;
+      color: $cotton-candy;
+      font-weight: 100;
+      padding-left: 16px;
+      &__item {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__get-in-touch {
+    &__title {
+      @include DrukCondensed-56;
+      color: $black;
+      text-transform: uppercase;
+      @media screen and (max-width: 640px) {
+        @include DrukCondensed-56-to-48;
+        text-align: left !important;
+      }
+    }
+    &__link {
+      @extend .home__mission__link;
+      text-align: center;
+      @media screen and (max-width: 640px) {
+        text-align: left !important;
+      }
+    }
+  }
+  &__credits {
+    background: $melrose;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0px;
+      right: 0px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 175px 100vw;
+      border-color: transparent transparent $white transparent;
+      @media screen and (max-width: 640px) {
+        border-width: 0 0 50px 100vw;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0px;
+      right: 0px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 100vw 70px 0;
+      border-color: transparent $white transparent transparent;
+      @media screen and (max-width: 640px) {
+        border-width: 0 100vw 50px 0;
+      }
+    }
+    &__title {
+      @include DrukCondensed-160;
+      color: $kaitoke-green;
+      text-transform: uppercase;
+    }
+    &__text {
+      @include text-block;
+      color: $kaitoke-green;
+      font-weight: 100;
+      a {
+        color: $kaitoke-green;
+        text-decoration: underline;
+      }
+      span {
+        font-family: Helvetica, sans-serif;
+        font-weight: 100;
+        line-height: 1;
+      }
+    }
+    &__subtitle {
+      @include FoundersGroteskMedium-24;
+      color: $kaitoke-green;
+    }
+  }
+}

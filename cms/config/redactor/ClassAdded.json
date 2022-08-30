@@ -1,0 +1,16 @@
+{
+  "buttons": ["html","format","bold","deleted","underline","lists","link","link-to-info-panel"],
+  "formatting": ["p","h3","h4"],
+  "formattingAdd": { 
+    "link-to-info-panel": {
+      "title": "Info Panel Link",
+      "api": "module.block.format",
+      "args": {
+        "tag": "span",
+        "class": "link-to-info-panel"
+      }
+    }
+  },
+  "toolbarFixed": true
+  
+}

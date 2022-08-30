@@ -1,0 +1,72 @@
+.uk-lightbox.uk-overflow-hidden.uk-lightbox-panel.uk-open {
+  background: $white;
+}
+
+.uk-lightbox-toolbar {
+  background: $white;
+}
+
+.uk-lightbox-toolbar-icon {
+  svg {
+    fill: $black;
+    color: $black;
+    line {
+      stroke-width: 3px;
+    }
+  }
+}
+
+.uk-lightbox-button {
+  &.uk-position-center-left {
+    width: 48px;
+    height: 34px;
+    background-color: transparent;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      background: url("/images/icon__carousel__chevron--left.png");
+      background-position: center center;
+      background-size: cover;
+      width: 48px;
+      height: 34px;
+    }
+    & svg {
+      display: none;
+    }
+  }
+  &.uk-position-center-right {
+    width: 48px;
+    height: 34px;
+    background-color: transparent;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      background: url("/images/icon__carousel__chevron--right.png");
+      background-position: center center;
+      background-size: cover;
+      width: 48px;
+      height: 34px;
+    }
+    & svg {
+      display: none;
+    }
+  }
+}
+
+.uk-lightbox-toolbar.uk-lightbox-caption {
+  @include H3-Grotesk-24;
+  font-weight: 300;
+  padding: 30px 20px;
+  width: 60vw;
+  margin: 0 auto;
+}

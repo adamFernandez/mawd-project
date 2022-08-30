@@ -1,0 +1,74 @@
+2022-08-24 09:20:03 [queue.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091400} 
+2022-08-24 09:20:03 [queue.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10326640} 
+2022-08-24 09:20:03 [queue.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11859136} 
+2022-08-24 09:20:03 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [2827] t9n:["app","Generating pending image transforms"] (attempt: 1, pid: 49) - Started {"memory":12521648} 
+2022-08-24 09:20:03 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [2827] t9n:["app","Generating pending image transforms"] (attempt: 1, pid: 49) - Done (time: 0.369s) {"memory":18506344} 
+2022-08-24 09:20:03 [queue.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661332802.348
+    'REQUEST_TIME' => 1661332802
+    'argv' => [
+        0 => 'craft'
+        1 => 'queue/exec'
+        2 => '2827'
+        3 => '600'
+        4 => '1'
+        5 => '49'
+        6 => '--color=1'
+    ]
+    'argc' => 7
+]  

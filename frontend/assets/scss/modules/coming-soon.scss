@@ -1,0 +1,15 @@
+.coming-soon {
+    &__title {
+        font-family: "Druk Condensed", Arial, sans-serif;
+        font-weight: normal;
+        font-size: calc(180px + (480 - 180) * (100vw - 640px) / (1800 - 640));
+        line-height: calc(180px + (144 - 180) * (100vw - 640px) / (1800 - 640));
+        width: 100vw;
+        text-align: center;
+        color: $black;
+    }
+    &__subtitle {
+        @include DrukCondensed-56-to-48;
+        color: $black;
+    }
+}

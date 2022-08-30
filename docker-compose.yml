@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.8'
 
 services:
   # nginx - web server
@@ -10,7 +10,7 @@ services:
       - ./cms/.env
     init: true
     ports:
-      - "8888:80"
+      - "8080:80"
     volumes:
       - cpresources:/var/www/project/cms/web/cpresources:delegated
       - ./cms/web:/var/www/project/cms/web:cached
@@ -77,8 +77,8 @@ services:
       MYSQL_USER: project
       MYSQL_PASSWORD: project
     init: true
-    ports:
-      - "3306:3306"
+    expose:
+      - "3306"
     volumes:
       - db-data:/var/lib/mysql
       - ./db-seed:/docker-entrypoint-initdb.d
@@ -90,7 +90,41 @@ services:
     expose:
       - "6379"
     init: true
-
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ./Dockerfile
+    # image: node:16.13.1-alpine3.14
+    command:
+      - yarn
+      - nuxt
+      - --hostname
+      - '0.0.0.0'
+      - --port
+      - '3004'
+    environment:
+      CRAFT_AUTH_TOKEN: nc0ANujaUF15Cf2XtJSdVsZsWUEvXEvc
+      CRAFT_API_URL: http://mawd.localhost:8080/api
+      CRAFT_API_BASE_URL: http://mawd.localhost:8080
+      CRAFT_ACTIONS_URL: http://mawd.localhost:8080/
+      FRONTEND_URL_PORT: http://localhost:3004
+    extra_hosts:
+      - mawd.localhost:host-gateway
+    ports:
+      - 3004:3004
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+  yarn:
+    image: node:16.13.1-alpine3.14
+    entrypoint: yarn
+    command:
+      - install
+    profiles:
+      - yarn
+    working_dir: /mawd
+    volumes:
+      - ./frontend:/mawd
 volumes:
   db-data:
   cpresources:

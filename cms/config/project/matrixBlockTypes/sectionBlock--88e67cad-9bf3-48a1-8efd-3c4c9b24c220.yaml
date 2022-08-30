@@ -1,0 +1,150 @@
+field: 5970ad3b-7d12-4eee-8802-e082f963143b # Info Panel
+fieldLayouts:
+  3837fd54-a32b-4b7c-810a-86fbe7d4e0bf:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 494a9686-e025-4b2d-9da3-5edf0fe02324 # Section Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e1956340-63ff-496b-8bca-3639398b5529
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cd985d2d-e740-4b54-b246-2344e23f92f7 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c5d123dc-4457-4fca-b322-b4dc0bb9e338
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 699251b5-311f-4cd5-b2d6-070cb1195242 # Button Text 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c521f6a6-ab54-461e-9676-798e2b60864e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f73e39e6-6a45-476f-985f-30f311555a10 # Button Slug
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5086b140-b4c4-4f94-872e-ca6b63e31331
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3191cff9-7a5c-46ad-9530-cd4e59feb432
+        userCondition: null
+fields:
+  494a9686-e025-4b2d-9da3-5edf0fe02324: # Section Title
+    columnSuffix: cpcibmtv
+    contentColumnType: text
+    fieldGroup: null
+    handle: sectionTitle
+    instructions: null
+    name: 'Section Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  699251b5-311f-4cd5-b2d6-070cb1195242: # Button Text 
+    columnSuffix: sskswsxo
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: null
+    name: 'Button Text '
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  cd985d2d-e740-4b54-b246-2344e23f92f7: # Text
+    columnSuffix: bugqhqjw
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  f73e39e6-6a45-476f-985f-30f311555a10: # Button Slug
+    columnSuffix: wwtibcww
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonSlug
+    instructions: null
+    name: 'Button Slug'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: sectionBlock
+name: 'Section Block'
+sortOrder: 1

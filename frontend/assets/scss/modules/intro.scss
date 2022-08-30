@@ -1,0 +1,102 @@
+.intro {
+  height: 550px;
+  background: $lightning-yellow;
+  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    height: 100vh;
+  }
+  &__animation {
+    width: 100%;
+    height: 100%;
+  }
+  &__title {
+    @include DrukCondensed-180;
+    color: $white;
+    font-size: calc(180px + (470 - 180) * (100vw - 640px) / (1800 - 640));
+    // line-height: calc(170px + (370 - 170) * (100vw - 640px) / (1800 - 640));
+    line-height: 0.8;
+    z-index: 999;
+    &__container {
+      // top: calc(50% - 80px);
+      // transform: translate(-50%, -50%);
+      top: calc(50% + 10px);
+      transform: translate(-50%, -50%);
+    }
+    &__coming-soon h3 {
+      @include text-block;
+    }
+  }
+  &__header {
+    width: 100%;
+    display: block;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  // &__ani {
+  //   .intro-fearless {
+  //     opacity: 0;
+  //   }
+  //   .intro-originality {
+  //     opacity: 0;
+  //   }
+  //   .intro-bar {
+  //     opacity: 0;
+  //   }
+  //   .header__logotype {
+  //     color: white;
+  //   }
+  // }
+  // .intro-bar {
+  //   background: rgba(255, 255, 255, 0) !important;
+  // }
+
+  svg {
+    z-index: 998;
+    max-width: initial;
+    width: initial !important;
+    height: initial !important;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  &--fearless {
+    animation: heading 0.06s ease;
+  }
+  &--originality {
+    animation: heading 0.06s ease;
+  }
+  &--logo {
+    animation: logo 0.13s ease;
+  }
+  &--header {
+    animation: logo 0.2s ease;
+  }
+}
+
+@mixin intro-animation--fade($name, $from, $to) {
+  @keyframes #{$name} {
+    0% {
+      opacity: $from;
+    }
+    100% {
+      opacity: $to;
+    }
+  }
+}
+
+@include intro-animation--fade(heading, 0.5, 1);
+
+@mixin intro-animation--fade2($name, $from, $to) {
+  @keyframes #{$name} {
+    0% {
+      opacity: $from;
+    }
+    100% {
+      opacity: $to;
+    }
+  }
+}
+
+@include intro-animation--fade2(logo, 0, 1);

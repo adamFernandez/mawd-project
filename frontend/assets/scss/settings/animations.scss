@@ -1,0 +1,51 @@
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.5s ease-in-out;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
+
+.appear {
+  // transform: translateY(60px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  &--inviewport {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.uk-grid-animate {
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar {
+  overflow: hidden;
+  width: 400px;
+}
+
+.sidebar--hide {
+  transform: translateX(-400px);
+  margin-left: -400px;
+}
+.sidebar--show {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  .filter__sidebar {
+    position: fixed;
+  }
+  .filter__sidebar__sector {
+    padding: 0 20px 0 0;
+  }
+  .filter__sidebar__category {
+    padding: 0 20px 0 0;
+  }
+}
+.display__content {
+  flex: 1 1 0%;
+}

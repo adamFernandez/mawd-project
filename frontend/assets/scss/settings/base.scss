@@ -1,0 +1,218 @@
+// --------------------------------------------------------------------------
+// base.sass
+// --------------------------------------------------------------------------
+// This file assigns global base variables
+// --------------------------------------------------------------------------
+
+///**********************************
+// Fonts
+///**********************************
+
+$heading-font-family: $narrow;
+$base-font-family: $narrow;
+$base-font-size: 25px;
+
+$light: 100;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+///**********************************
+// Colors
+///**********************************
+
+// $color-brand: $picton-blue
+// $color-brand-dark: $bahama-blue
+// $color-brand-light: $aqua-haze
+
+///**********************************
+// Spacing
+///**********************************
+
+$base-spacing: 10px;
+
+///**********************************
+// Images
+///**********************************
+
+$base-image-path: "/images/interface";
+
+.layout {
+  min-height: 100vh;
+  // overflow-x: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.width--100 {
+  width: 100%;
+}
+
+.full-height {
+  height: 100vh;
+  background: $lightning-yellow;
+}
+
+.image-fluid {
+  width: 100%;
+  height: auto;
+  img {
+    width: 100%;
+    height: auto;
+    max-width: unset;
+  }
+}
+
+.navbar-item-padding {
+  padding: 15px 15px;
+  &--large {
+    padding: 15px 15px;
+  }
+  @media (min-width: 768px) {
+    padding: 18px 15px;
+    &--large {
+      padding: 18px 15px 15px 18px;
+    }
+  }
+}
+.container-padding {
+  padding: 0px 15px;
+}
+
+.disclaimer {
+    &__page {
+      @include FoundersGroteskNormal-16;
+      position: relative; 
+      padding: 0 15px 15px 15px;
+    }
+    &__form {
+      @include FoundersGroteskNormal-16;
+      position: relative; 
+      padding: 0 30px 15px 30px;
+    }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bg--white {
+  background: $white !important;
+}
+
+.base-loading {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $lightning-yellow;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  @include FoundersGroteskMono-12;
+  color: $black;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.swiper-pagination-bullet {
+  width: 4px;
+  height: 4px;
+  vertical-align: middle;
+}
+
+.swiper-pagination-bullet-active {
+  background: black;
+  width: 8px;
+  height: 8px;
+}
+
+.ratio-5-4 {
+  width: 100%;
+  padding-bottom: calc(500 / 400 * 100%);
+  height: 0;
+  position: relative;
+  img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.meta-1-1 {
+  width: 100px;
+  height: 100px;
+  @media (min-width: 780px) {
+    width: 200px;
+    height: 200px;
+  }
+  img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.ratio-1-1 {
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+  img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.ratio-16-9 {
+  width: 100%;
+  padding-bottom: 66.7%;
+  height: 0;
+  img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// .shapes-svg {
+//   width: 100%;
+//   height: auto;
+// }
+
+.draggable {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: move;
+  pointer-events: auto;
+  z-index: 99;
+  transform: translateY(0);
+}
+
+.align-self {
+  align-self: flex-start;
+}
+
+.icon-search {
+  width: 32px;
+}
+.icon-social {
+  width: 40px;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}

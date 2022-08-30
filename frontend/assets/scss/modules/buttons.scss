@@ -1,0 +1,25 @@
+.btn {
+  @include FoundersGroteskMono-14;
+  @include btn--black;
+  &--large {
+    @include DrukCondensed-56;
+    @include btn--large;
+  }
+  &--xlarge {
+    @include DrukCondensed-160;
+    @include btn--xlarge;
+  }
+  &--ghost {
+    @include FoundersGroteskMono-18;
+    background: transparent;
+    color: $black;
+    &:hover {
+      background: $black;
+      color: $lightning-yellow;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}

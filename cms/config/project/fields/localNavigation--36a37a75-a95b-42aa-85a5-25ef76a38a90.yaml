@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: c164b1cf-9cd6-4cea-8349-432bac64860a # Global
+handle: localNavigation
+instructions: null
+name: 'Local Navigation'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_localnavigation}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

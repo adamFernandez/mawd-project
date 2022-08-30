@@ -1,0 +1,10 @@
+schema:
+  - "http://localhost:8888/api":
+      headers:
+        Authorization: "Bearer nc0ANujaUF15Cf2XtJSdVsZsWUEvXEvc"
+extensions:
+  codegen:
+    generates:
+      ./gql/schema.json:
+        plugins:
+          - introspection

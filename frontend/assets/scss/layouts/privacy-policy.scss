@@ -1,0 +1,16 @@
+.privacy-policy {
+    &__title {
+        @include DrukCondensed-160;
+        color: $black;
+        text-transform: uppercase;
+    }
+    &__text {
+        @include text-block;
+        color: $black;
+        font-weight: 100;
+        a {
+            color: $black;
+            text-decoration: underline;
+        }
+    }
+}

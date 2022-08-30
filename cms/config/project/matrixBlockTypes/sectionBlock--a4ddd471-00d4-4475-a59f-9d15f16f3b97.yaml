@@ -1,0 +1,177 @@
+field: f9a83780-229f-41e0-851e-1bc33b43a67a # Section Group
+fieldLayouts:
+  19e79533-5d0c-4b88-8f3d-c1adaf7b38ba:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c537eedf-7d39-4871-94a3-ecf19db96145 # Section Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 23ed9f02-6b82-49ad-bef2-81fad9914706
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 05f0cb1e-9f1c-4cae-ab9e-e7b809cfd069 # link to button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4c47515c-6f20-42ba-8e39-e6ea9032e1ae
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fb59034d-1ad5-43a0-9984-870491e72b82 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 40a69fde-c6ca-4041-a77d-f4e9648eee5a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 905da369-6eed-4118-a865-63eb354975d4 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3d7583e3-7e62-4d61-9c58-38c335ff3041
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: fee6900f-77f3-4988-925b-e4868d5c1a80
+        userCondition: null
+fields:
+  05f0cb1e-9f1c-4cae-ab9e-e7b809cfd069: # link to button
+    columnSuffix: dbiskvbf
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkToButton
+    instructions: null
+    name: 'link to button'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  905da369-6eed-4118-a865-63eb354975d4: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:5c642d7e-b16b-4836-9575-668d75d242e5' # Site
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:5c642d7e-b16b-4836-9575-668d75d242e5' # Site
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  c537eedf-7d39-4871-94a3-ecf19db96145: # Section Title
+    columnSuffix: ggjoeusw
+    contentColumnType: text
+    fieldGroup: null
+    handle: sectionTitle
+    instructions: null
+    name: 'Section Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  fb59034d-1ad5-43a0-9984-870491e72b82: # Text
+    columnSuffix: gcmnzvnl
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: ClassAdded.json
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: sectionBlock
+name: 'Section Block'
+sortOrder: 1

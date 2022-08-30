@@ -1,0 +1,61 @@
+@mixin btn--black {
+  color: $white;
+  background: $black;
+  border: 2px solid $black !important;
+  padding: 10px;
+  border-radius: 6px;
+  transition: all 0.4s ease-in-out;
+}
+
+@mixin btn--ghost {
+  color: $black;
+  background: transparent;
+  border: 1px solid $black !important;
+  @media (min-width: 768px) {
+    border: 2px solid $black !important;
+  }
+  padding: 10px;
+  border-radius: 6px;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    color: $white;
+    background: $black;
+  }
+}
+
+@mixin btn--ghost--dashed {
+  border: 1px dashed $black !important;
+  @media (min-width: 768px) {
+    border: 2px dashed $black !important;
+  }
+}
+
+@mixin btn--large {
+  @include btn--ghost;
+  padding: 15px 20px 15px 20px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@mixin btn--xlarge {
+  @include btn--large;
+  border-radius: 60px;
+  border: 6px solid $black !important;
+  text-transform: uppercase;
+  padding: 45px 65px 45px 65px;
+}
+
+@mixin text-block {
+  @include FoundersGroteskNormal-24;
+  color: $black;
+  line-height: calc(24px + (32 - 24) * (100vw - 640px) / (1800 - 64));
+}
+
+figure {
+  margin: 0;
+}
+
+.width-responsive {
+  width: 100%;
+}

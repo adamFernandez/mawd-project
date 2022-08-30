@@ -1,0 +1,79 @@
+fieldLayouts:
+  f80170e2-961e-4eb9-94f6-51c6015dfcc4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7c8e0c69-0cdf-4072-aba8-5d73434ef9ae
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 89bdafa6-9ac3-429b-8f3f-d2fa1aec1987 # Link To
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 93f0af15-f463-46db-a243-aac13c23d44c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 693a4a92-27d0-4255-a760-68e45bcb3887 # Rich Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7fad0731-568f-48b3-a963-80ef801238d4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5970ad3b-7d12-4eee-8802-e082f963143b # Info Panel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f8294390-c8c2-4bfe-b077-6ae7a705e6a2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bb8ae6cc-0f30-46e7-a063-7abd2be21215
+        userCondition: null
+handle: info
+hasTitleField: true
+name: Info
+section: b9fedc46-0f5d-4de6-8ea4-b4c3cc96e918 # Info
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

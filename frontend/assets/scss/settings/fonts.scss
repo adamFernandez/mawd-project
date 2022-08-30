@@ -1,0 +1,313 @@
+/*
+// --------------------------------------------------------------------------
+// fonts.sass
+// --------------------------------------------------------------------------
+// This file assigns gloablly used fonts to variables
+// --------------------------------------------------------------------------
+
+//***********************************
+// @font-face rules
+//***********************************
+*/
+
+@font-face {
+  font-family: "Founders Grotesk Mono";
+  src: url("../fonts/founders-grotesk-mono-web-regular.eot");
+  src: url("../fonts/founders-grotesk-mono-web-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/founders-grotesk-mono-web-regular.woff2") format("woff2"),
+    url("../fonts/founders-grotesk-mono-web-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  // font-display: swap;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../fonts/founders-grotesk-web-regular.eot");
+  src: url("../fonts/founders-grotesk-web-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/founders-grotesk-web-regular.woff2") format("woff2"),
+    url("../fonts/founders-grotesk-web-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  // font-display: swap;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../fonts/founders-grotesk-web-medium.eot");
+  src: url("../fonts/founders-grotesk-web-medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/founders-grotesk-web-medium.woff2") format("woff2"),
+    url("../fonts/founders-grotesk-web-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  // font-display: swap;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../fonts/founders-grotesk-web-medium-italic.eot");
+  src: url("../fonts/founders-grotesk-web-medium-italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/founders-grotesk-web-medium-italic.woff2") format("woff2"),
+    url("../fonts/founders-grotesk-web-medium-italic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  // font-display: swap;
+}
+
+@font-face {
+  font-family: "Founders Grotesk Regular";
+  src: url("../fonts/founders-grotesk-web-regular-italic.eot");
+  src: url("../fonts/founders-grotesk-web-regular-italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/founders-grotesk-web-regular-italic.woff2") format("woff2"),
+    url("../fonts/founders-grotesk-web-regular-italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  // font-display: swap;
+}
+
+@font-face {
+  font-family: "Druk Condensed";
+  src: url("../fonts/DrukCond-Super-Web.woff") format("woff2"),
+    url("../fonts/DrukCond-Super-Web.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  // font-display: swap;
+}
+
+@font-face {
+  font-family: "Druk";
+  src: url("../fonts/Druk-Heavy-Web.woff2") format("woff2"),
+    url("../fonts/Druk-Heavy-Web.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  // font-display: swap;
+}
+
+/*
+  //***********************************
+  // Typography
+  //***********************************
+  */
+
+//   Founders Grotesk
+
+@mixin FoundersGroteskMedium-34 {
+  font-family: "Founders Grotesk", Arial, sans-serif;
+  font-weight: 500;
+  font-size: calc(28px + (34 - 28) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(28px + (34 - 28) * (100vw - 640px) / (1800 - 640));
+}
+@mixin FoundersGroteskMedium-28 {
+  font-family: "Founders Grotesk", Arial, sans-serif;
+  font-weight: 500;
+  font-size: calc(24px + (28 - 24) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(24px + (28 - 24) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin FoundersGroteskMedium-24 {
+  font-family: "Founders Grotesk", Arial, sans-serif;
+  font-weight: 500;
+  font-size: calc(18px + (24 - 18) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(22px + (28 - 22) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin FoundersGroteskMedium-20 {
+  font-family: "Founders Grotesk", Arial, sans-serif;
+  font-weight: 500;
+  font-size: calc(14px + (20 - 14) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(18px + (24 - 18) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin FoundersGroteskMedium-16 {
+  font-family: "Founders Grotesk", Arial, sans-serif;
+  font-weight: 500;
+  font-size: calc(10px + (16 - 10) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(10px + (16 - 10) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin FoundersGroteskNormal-30 {
+  font-family: "Founders Grotesk", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(24px + (30 - 24) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(24px + (30 - 24) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin FoundersGroteskNormal-28 {
+  font-family: "Founders Grotesk", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(24px + (28 - 24) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(24px + (28 - 24) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin FoundersGroteskNormal-24 {
+  font-family: "Founders Grotesk", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(18px + (24 - 18) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(22px + (28 - 22) * (100vw - 640px) / (1800 - 640));
+}
+
+
+@mixin FoundersGroteskNormal-20 {
+  font-family: "Founders Grotesk", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(14px + (20 - 14) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(18px + (24 - 18) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin FoundersGroteskNormal-18 {
+  font-family: "Founders Grotesk", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(12px + (18 - 12) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(18px + (24 - 18) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin FoundersGroteskNormal-16 {
+  font-family: "Founders Grotesk", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(14px + (16 - 14) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(14px + (16 - 14) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin FoundersGroteskNormal-14 {
+  font-family: "Founders Grotesk", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(14px + (14 - 12) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(14px + (14 - 12) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin FoundersGroteskNormal-12 {
+  font-family: "Founders Grotesk", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(10px + (12 - 10) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(10px + (12 - 10) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin FoundersGroteskNormal-10 {
+  font-family: "Founders Grotesk", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(8px + (10 - 8) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(8px + (10 - 8) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin FoundersGroteskMono-18 {
+  font-family: "Founders Grotesk Mono", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(12px + (18 - 12) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(12px + (18 - 12) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin FoundersGroteskMono-16 {
+  font-family: "Founders Grotesk Mono", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(10px + (16 - 10) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(10px + (16 - 10) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin FoundersGroteskMono-14 {
+  font-family: "Founders Grotesk Mono", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(10px + (14 - 10) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(10px + (14 - 10) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin FoundersGroteskMono-12 {
+  font-family: "Founders Grotesk Mono", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(10px + (12 - 10) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(10px + (12 - 10) * (100vw - 640px) / (1800 - 640));
+}
+
+// Druk Condensed
+@mixin DrukCondensed-200 {
+  font-family: "Druk Condensed", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(36px + (200 - 36) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(36px + (144 - 36) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin DrukCondensed-180 {
+  font-family: "Druk Condensed", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(36px + (180 - 36) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(36px + (144 - 36) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin DrukCondensed-160 {
+  font-family: "Druk Condensed", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(72px + (160 - 72) * (100vw - 640px) / (1800 - 640));
+  // font-size: calc(36px + (180 - 36) * (100vh - 640px) / (1800 - 640));
+  // line-height: calc(72px + (144 - 72) * (100vw - 640px) / (1800 - 640));
+  line-height: 0.8;
+}
+
+@mixin DrukCondensed-160-h {
+  font-family: "Druk Condensed", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(72px + (160 - 72) * (100vh - 640px) / (1800 - 640));
+  // line-height: calc(72px + (144 - 72) * (100vw - 640px) / (1800 - 640));
+  line-height: 0.8;
+}
+
+@mixin DrukCondensed-120 {
+  font-family: "Druk Condensed", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(64px + (120 - 64) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(64px + (144 - 64) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin DrukCondensed-56 {
+  font-family: "Druk Condensed", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(36px + (56 - 36) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(36px + (56 - 36) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin DrukCondensed-56-to-48 {
+  font-family: "Druk Condensed", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(48px + (56 - 48) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(48px + (56 - 48) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin DrukHeavy-40 {
+  font-family: "Druk", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(36px + (40 - 36) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(36px + (40 - 36) * (100vw - 640px) / (1800 - 640));
+}
+
+@mixin DrukHeavy-30 {
+  font-family: "Druk", Arial, sans-serif;
+  font-weight: normal;
+  font-size: calc(26px + (30 - 26) * (100vw - 640px) / (1800 - 640));
+  line-height: calc(26px + (30 - 26) * (100vw - 640px) / (1800 - 640));
+}
+
+// .header h1 {
+//     @include DrukCondensed-56;
+// }
+
+$narrow: "Avenir", Arial, sans-serif;
+
+//   $maison-neue-mono: "Inter", Arial, sans-serif;
+//   $maison-neue-book: "Inter", Arial, sans-serif;
+//   $agrandir-grand-heavy: "Agrandir-Grand-Heavy", Arial, sans-serif;
+
+//   /*
+//   //     font-family: 'Avenir', serif!important
+//   //     -webkit-font-smoothing: antialiased
+//   //     -moz-osx-font-smoothing: grayscale
+//   */
+
+.caption {
+  @include FoundersGroteskMono-12;
+  color: $black;
+  text-transform: uppercase;
+  margin-top: 10px;
+}

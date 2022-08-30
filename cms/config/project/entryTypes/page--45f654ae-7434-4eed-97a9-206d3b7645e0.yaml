@@ -1,0 +1,79 @@
+fieldLayouts:
+  156da040-0f29-4fe1-9eb4-4fed7c638c0e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 854b74ec-b66e-4b96-8e55-0753f02f9e93
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 650c31ff-38ed-4466-bf70-4de9476c7de4 # pageTitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 24457d1c-6704-4d7c-afc4-f8a0067ffd63
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 36a37a75-a95b-42aa-85a5-25ef76a38a90 # Local Navigation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 58a020fa-b498-4e35-8f8a-8fd46558b032
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f9a83780-229f-41e0-851e-1bc33b43a67a # Section Group
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4d455474-f10f-44af-b360-2a4859577c50
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e4c823d1-d19b-4ec1-9f75-66c2f459d3c0
+        userCondition: null
+handle: page
+hasTitleField: true
+name: Page
+section: 1d8804e1-f718-440e-b121-235162ea54e0 # Page
+sortOrder: 1
+titleFormat: '{header}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

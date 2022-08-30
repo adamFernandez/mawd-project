@@ -1,0 +1,19 @@
+columnSuffix: otnqgcyp
+contentColumnType: text
+fieldGroup: c164b1cf-9cd6-4cea-8349-432bac64860a # Global
+handle: imageCaption
+instructions: null
+name: 'Image Caption'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

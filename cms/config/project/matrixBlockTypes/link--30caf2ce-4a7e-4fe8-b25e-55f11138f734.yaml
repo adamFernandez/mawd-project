@@ -1,0 +1,157 @@
+field: 36a37a75-a95b-42aa-85a5-25ef76a38a90 # Local Navigation
+fieldLayouts:
+  58ecd62a-6767-40d1-a6ee-b705c888fc9b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 10c5668c-6483-4f8d-8b14-569108d3ce8f # Link Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7663ce92-f11e-455f-ae0c-78e2a28bf9c3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ecbe8647-c5f3-40a7-9fb2-633795dde928 # Link Url
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7958080f-426b-48e0-90c9-05ff1b27394f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2facf7b3-ec5b-431a-b6a0-0be4918fc269 # Class
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b05c8ba6-20a2-49ea-97e4-2d250d937a0d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6a9ddb91-2074-41c3-a8a0-aac8037c162a # background
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 735a8241-2fec-436e-9883-b966506e5824
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bc9c79ac-d34b-4c4c-a66c-5dfef3f2f35c
+        userCondition: null
+fields:
+  2facf7b3-ec5b-431a-b6a0-0be4918fc269: # Class
+    columnSuffix: cklrszoj
+    contentColumnType: text
+    fieldGroup: null
+    handle: class
+    instructions: null
+    name: Class
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  6a9ddb91-2074-41c3-a8a0-aac8037c162a: # background
+    columnSuffix: hphhhcew
+    contentColumnType: string
+    fieldGroup: null
+    handle: background
+    instructions: null
+    name: background
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Activate
+            -
+              - value
+              - 'true'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Deactivate
+            -
+              - value
+              - 'false'
+            -
+              - default
+              - '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+  10c5668c-6483-4f8d-8b14-569108d3ce8f: # Link Title
+    columnSuffix: ogepghxs
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkTitle
+    instructions: null
+    name: 'Link Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ecbe8647-c5f3-40a7-9fb2-633795dde928: # Link Url
+    columnSuffix: cblagonp
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkUrl
+    instructions: null
+    name: 'Link Url'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: link
+name: Link
+sortOrder: 1

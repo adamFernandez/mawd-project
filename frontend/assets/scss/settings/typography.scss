@@ -1,0 +1,51 @@
+/*
+// --------------------------------------------------------------------------
+// typography.sass
+// --------------------------------------------------------------------------
+// Helpers for headings and paragraphs
+// **********************************/
+
+// @mixin H3-Grotesk-24--link {
+//   @include FoundersGroteskNormal-24;
+//   color: $black;
+//   padding-right: 30px;
+//   position: relative;
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     right: 0px;
+//     top: 9px;
+//     width: 20px;
+//     height: 13px;
+//     background: url("/images/icon__arrow--right.png");
+//     background-size: contain;
+//   }
+// }
+
+@mixin H3-Grotesk-24 {
+  @include FoundersGroteskNormal-24;
+  color: $black;
+}
+
+@mixin H3-Grotesk-20 {
+  @include FoundersGroteskMedium-20;
+  color: $black;
+}
+
+@mixin H3-Grotesk-20--normal {
+  @include FoundersGroteskNormal-20;
+  color: $black;
+}
+
+figcaption {
+  @include H3-Grotesk-24;
+  padding-top: 5px;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: #333;
+  }
+}

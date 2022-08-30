@@ -1,0 +1,84 @@
+.footer {
+  background: $black;
+  @media screen and (max-width: 640px) {
+    padding: 60px 0;
+    padding-bottom: 20px;
+  }
+  &__logotype {
+    @include DrukHeavy-30;
+    color: $white !important;
+    letter-spacing: 1px;
+    &--partner {
+      max-width: 100px;
+      padding-left: 10px;
+      float: right;
+      margin-left: 20px;
+      img {
+        width: 150px;
+      }
+      @media screen and (max-width: 640px) {
+        float: none;
+        text-align: center;
+        margin: 30px auto !important;
+      }
+    }
+    &--cez {
+      max-width: 200px;
+      padding-left: 10px;
+      float: right;
+      margin-left: 20px;
+      img {
+        width: 200px;
+      }
+      @media screen and (max-width: 640px) {
+        float: none;
+        text-align: center;
+        margin: 30px auto !important;
+      }
+    }
+    @media screen and (max-width: 640px) {
+      text-align: center;
+    }
+  }
+  &__social-icons {
+    @media screen and (max-width: 640px) {
+      margin: 0px auto !important;
+      margin-bottom: 20px !important;
+    }
+    &__wrapper {
+      @media screen and (max-width: 640px) {
+        display: flex;
+        align-items: center;
+      }
+    }
+    @media screen and (max-width: 640px) {
+      li {
+        padding-left: 0;
+      }
+    }
+  }
+  &__horizontal-line {
+    margin-top: 80px;
+    @media screen and (max-width: 640px) {
+      margin-top: 20px;
+    }
+  }
+  &__link {
+    @include FoundersGroteskNormal-20;
+    color: $white !important;
+    @media screen and (max-width: 640px) {
+      text-align: center;
+    }
+    &--space-mobile {
+      @media screen and (max-width: 640px) {
+        margin-top: 20px;
+      }
+    }
+  }
+  &__rights {
+    @include FoundersGroteskNormal-12;
+    @media screen and (max-width: 640px) {
+      text-align: center;
+    }
+  }
+}

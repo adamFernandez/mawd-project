@@ -1,0 +1,3584 @@
+2022-08-28 01:39:09 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790672} 
+2022-08-28 01:39:09 [web.INFO] [yii\web\Session::open] Session started {"memory":2649912} 
+2022-08-28 01:39:09 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776624} 
+2022-08-28 01:39:09 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027680} 
+2022-08-28 01:39:09 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/graphiql?schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=68b42921-4b94-4951-8648-21bb18d51a5a'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '63826'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661650748.7367
+    'REQUEST_TIME' => 1661650748
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 02:59:51 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 02:59:51 [web.INFO] [yii\web\Session::open] Session started {"memory":2649624} 
+2022-08-28 02:59:51 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776336} 
+2022-08-28 02:59:51 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027392} 
+2022-08-28 02:59:51 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/singles?sort=title-asc'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '63826'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661655591.1836
+    'REQUEST_TIME' => 1661655591
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 02:59:51 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790336} 
+2022-08-28 02:59:51 [web.INFO] [yii\web\Session::open] Session started {"memory":2650040} 
+2022-08-28 02:59:51 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776432} 
+2022-08-28 02:59:51 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027488} 
+2022-08-28 02:59:51 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/graphql/schemas'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '63888'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661655591.4847
+    'REQUEST_TIME' => 1661655591
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 02:59:51 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 02:59:51 [web.INFO] [yii\web\Session::open] Session started {"memory":2650088} 
+2022-08-28 02:59:51 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776480} 
+2022-08-28 02:59:51 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027536} 
+2022-08-28 02:59:51 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/info?sort=postDate-desc'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '63826'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661655591.5943
+    'REQUEST_TIME' => 1661655591
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 02:59:51 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 02:59:51 [web.INFO] [yii\web\Session::open] Session started {"memory":2650088} 
+2022-08-28 02:59:51 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776480} 
+2022-08-28 02:59:51 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027536} 
+2022-08-28 02:59:51 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/page/311-landing-page'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '63888'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661655591.705
+    'REQUEST_TIME' => 1661655591
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 04:23:17 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790672} 
+2022-08-28 04:23:17 [web.INFO] [yii\web\Session::open] Session started {"memory":2649912} 
+2022-08-28 04:23:17 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776624} 
+2022-08-28 04:23:17 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027680} 
+2022-08-28 04:23:17 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/graphiql?schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=68b42921-4b94-4951-8648-21bb18d51a5a'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '63926'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661660597.4152
+    'REQUEST_TIME' => 1661660597
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 07:09:53 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 07:09:53 [web.INFO] [yii\web\Session::open] Session started {"memory":2649624} 
+2022-08-28 07:09:53 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776336} 
+2022-08-28 07:09:53 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027392} 
+2022-08-28 07:09:53 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/singles?sort=title-asc'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '63926'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661670593.5935
+    'REQUEST_TIME' => 1661670593
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 07:09:53 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790336} 
+2022-08-28 07:09:53 [web.INFO] [yii\web\Session::open] Session started {"memory":2650040} 
+2022-08-28 07:09:53 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776432} 
+2022-08-28 07:09:53 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027488} 
+2022-08-28 07:09:53 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/graphql/schemas'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '63950'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661670593.8064
+    'REQUEST_TIME' => 1661670593
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 07:09:53 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 07:09:53 [web.INFO] [yii\web\Session::open] Session started {"memory":2650088} 
+2022-08-28 07:09:53 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776480} 
+2022-08-28 07:09:53 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027536} 
+2022-08-28 07:09:53 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/info?sort=postDate-desc'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '63926'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661670593.9237
+    'REQUEST_TIME' => 1661670593
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 07:09:54 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 07:09:54 [web.INFO] [yii\web\Session::open] Session started {"memory":2650088} 
+2022-08-28 07:09:54 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776480} 
+2022-08-28 07:09:54 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027536} 
+2022-08-28 07:09:54 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/page/311-landing-page'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '63950'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661670594.0036
+    'REQUEST_TIME' => 1661670594
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 07:10:02 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790672} 
+2022-08-28 07:10:02 [web.INFO] [yii\web\Session::open] Session started {"memory":2650376} 
+2022-08-28 07:10:02 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776768} 
+2022-08-28 07:10:02 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027824} 
+2022-08-28 07:10:02 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/graphiql?schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=68b42921-4b94-4951-8648-21bb18d51a5a'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '63950'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661670602.5922
+    'REQUEST_TIME' => 1661670602
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 09:20:35 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790672} 
+2022-08-28 09:20:35 [web.INFO] [yii\web\Session::open] Session started {"memory":2649912} 
+2022-08-28 09:20:35 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776624} 
+2022-08-28 09:20:35 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027680} 
+2022-08-28 09:20:35 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/graphiql?schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=68b42921-4b94-4951-8648-21bb18d51a5a'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64012'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661678435.1806
+    'REQUEST_TIME' => 1661678435
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 10:45:52 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 10:45:52 [web.INFO] [yii\web\Session::open] Session started {"memory":2649624} 
+2022-08-28 10:45:52 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776336} 
+2022-08-28 10:45:52 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027392} 
+2022-08-28 10:45:52 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/singles?sort=title-asc'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64012'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661683552.4927
+    'REQUEST_TIME' => 1661683552
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 10:45:52 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790336} 
+2022-08-28 10:45:52 [web.INFO] [yii\web\Session::open] Session started {"memory":2650040} 
+2022-08-28 10:45:52 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776432} 
+2022-08-28 10:45:52 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027488} 
+2022-08-28 10:45:52 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/graphql/schemas'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64036'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661683552.6399
+    'REQUEST_TIME' => 1661683552
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 10:45:52 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 10:45:52 [web.INFO] [yii\web\Session::open] Session started {"memory":2650088} 
+2022-08-28 10:45:52 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776480} 
+2022-08-28 10:45:52 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027536} 
+2022-08-28 10:45:52 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/info?sort=postDate-desc'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64012'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661683552.7242
+    'REQUEST_TIME' => 1661683552
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 10:45:52 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 10:45:52 [web.INFO] [yii\web\Session::open] Session started {"memory":2650088} 
+2022-08-28 10:45:52 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776480} 
+2022-08-28 10:45:52 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027536} 
+2022-08-28 10:45:52 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/page/311-landing-page'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64036'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661683552.8003
+    'REQUEST_TIME' => 1661683552
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 12:09:05 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790672} 
+2022-08-28 12:09:05 [web.INFO] [yii\web\Session::open] Session started {"memory":2649912} 
+2022-08-28 12:09:05 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776624} 
+2022-08-28 12:09:05 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027680} 
+2022-08-28 12:09:05 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/graphiql?schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=68b42921-4b94-4951-8648-21bb18d51a5a'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64036'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661688545.2009
+    'REQUEST_TIME' => 1661688545
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 14:53:29 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 14:53:29 [web.INFO] [yii\web\Session::open] Session started {"memory":2649624} 
+2022-08-28 14:53:29 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776336} 
+2022-08-28 14:53:30 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027392} 
+2022-08-28 14:53:30 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/singles?sort=title-asc'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64036'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661698409.7381
+    'REQUEST_TIME' => 1661698409
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 14:53:30 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790336} 
+2022-08-28 14:53:30 [web.INFO] [yii\web\Session::open] Session started {"memory":2650040} 
+2022-08-28 14:53:30 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776432} 
+2022-08-28 14:53:30 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027488} 
+2022-08-28 14:53:30 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/graphql/schemas'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64094'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661698410.0278
+    'REQUEST_TIME' => 1661698410
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 14:53:30 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 14:53:30 [web.INFO] [yii\web\Session::open] Session started {"memory":2650088} 
+2022-08-28 14:53:30 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776480} 
+2022-08-28 14:53:30 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027536} 
+2022-08-28 14:53:30 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/info?sort=postDate-desc'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64036'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661698410.1184
+    'REQUEST_TIME' => 1661698410
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 14:53:30 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 14:53:30 [web.INFO] [yii\web\Session::open] Session started {"memory":2650088} 
+2022-08-28 14:53:30 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776480} 
+2022-08-28 14:53:30 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027536} 
+2022-08-28 14:53:30 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/page/311-landing-page'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64094'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661698410.1944
+    'REQUEST_TIME' => 1661698410
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 14:53:50 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790672} 
+2022-08-28 14:53:50 [web.INFO] [yii\web\Session::open] Session started {"memory":2650376} 
+2022-08-28 14:53:50 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776768} 
+2022-08-28 14:53:50 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027824} 
+2022-08-28 14:53:50 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/graphiql?schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=68b42921-4b94-4951-8648-21bb18d51a5a'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64094'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661698430.7712
+    'REQUEST_TIME' => 1661698430
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 18:47:41 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790672} 
+2022-08-28 18:47:41 [web.INFO] [yii\web\Session::open] Session started {"memory":2649912} 
+2022-08-28 18:47:41 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776624} 
+2022-08-28 18:47:41 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027680} 
+2022-08-28 18:47:41 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/graphiql?schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=68b42921-4b94-4951-8648-21bb18d51a5a'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64094'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661712460.6453
+    'REQUEST_TIME' => 1661712460
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 18:47:45 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 18:47:45 [web.INFO] [yii\web\Session::open] Session started {"memory":2650088} 
+2022-08-28 18:47:45 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776480} 
+2022-08-28 18:47:45 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027536} 
+2022-08-28 18:47:45 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/singles?sort=title-asc'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64094'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661712465.028
+    'REQUEST_TIME' => 1661712465
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 18:47:45 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790336} 
+2022-08-28 18:47:45 [web.INFO] [yii\web\Session::open] Session started {"memory":2650040} 
+2022-08-28 18:47:45 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776432} 
+2022-08-28 18:47:45 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027488} 
+2022-08-28 18:47:45 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/graphql/schemas'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64178'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661712465.1297
+    'REQUEST_TIME' => 1661712465
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 18:47:45 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 18:47:45 [web.INFO] [yii\web\Session::open] Session started {"memory":2650088} 
+2022-08-28 18:47:45 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776480} 
+2022-08-28 18:47:45 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027536} 
+2022-08-28 18:47:45 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/info?sort=postDate-desc'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64094'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661712465.194
+    'REQUEST_TIME' => 1661712465
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 18:47:45 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 18:47:45 [web.INFO] [yii\web\Session::open] Session started {"memory":2650088} 
+2022-08-28 18:47:45 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776480} 
+2022-08-28 18:47:45 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027536} 
+2022-08-28 18:47:45 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/page/311-landing-page'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64178'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661712465.262
+    'REQUEST_TIME' => 1661712465
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 21:31:59 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790672} 
+2022-08-28 21:31:59 [web.INFO] [yii\web\Session::open] Session started {"memory":2649912} 
+2022-08-28 21:31:59 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776624} 
+2022-08-28 21:31:59 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027680} 
+2022-08-28 21:31:59 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/graphiql?schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=*&schemaUid=68b42921-4b94-4951-8648-21bb18d51a5a'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64178'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661722319.0632
+    'REQUEST_TIME' => 1661722319
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 21:32:12 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 21:32:12 [web.INFO] [yii\web\Session::open] Session started {"memory":2650088} 
+2022-08-28 21:32:12 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776480} 
+2022-08-28 21:32:12 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027536} 
+2022-08-28 21:32:12 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/singles?sort=title-asc'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64178'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661722332.0062
+    'REQUEST_TIME' => 1661722332
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 21:32:12 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790336} 
+2022-08-28 21:32:12 [web.INFO] [yii\web\Session::open] Session started {"memory":2650040} 
+2022-08-28 21:32:12 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776432} 
+2022-08-28 21:32:12 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027488} 
+2022-08-28 21:32:12 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/graphql/schemas'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64236'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661722332.179
+    'REQUEST_TIME' => 1661722332
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 21:32:12 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 21:32:12 [web.INFO] [yii\web\Session::open] Session started {"memory":2650088} 
+2022-08-28 21:32:12 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776480} 
+2022-08-28 21:32:12 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027536} 
+2022-08-28 21:32:12 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/info?sort=postDate-desc'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64178'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661722332.2493
+    'REQUEST_TIME' => 1661722332
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  
+2022-08-28 21:32:12 [web.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":1790384} 
+2022-08-28 21:32:12 [web.INFO] [yii\web\Session::open] Session started {"memory":2650088} 
+2022-08-28 21:32:12 [web.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":2776480} 
+2022-08-28 21:32:12 [web.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":3027536} 
+2022-08-28 21:32:12 [web.INFO] [application] Request context:
+$_GET = [
+    'dontExtendSession' => '1'
+]
+
+$_POST = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.274027655.1659353287'
+    '1031b8c41dfff97a311a7ac99863bdc5_username' => '50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a:2:{i:0;s:41:\"1031b8c41dfff97a311a7ac99863bdc5_username\";i:1;s:5:\"admin\";}'
+    '_ga_CXRYXSV0HH' => 'GS1.1.1660958087.4.1.1660958109.0.0.0'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '_ga_TZZRPDX53X' => 'GS1.1.1661509200.1.0.1661509832.0.0.0'
+    'CraftSessionId' => 'c8b5eb03efeba9635e37f12ec531d3dc'
+    '_ga_EDRH2ZS120' => 'GS1.1.1661551061.52.1.1661553290.0.0.0'
+]
+
+$_FILES = []
+
+$_SERVER = [
+    'REDIS_CRAFT_DB' => '1'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'REDIS_PORT' => '6379'
+    'HOSTNAME' => '24b63eea447e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'HOME' => '/home/www-data'
+    'ENVIRONMENT' => 'dev'
+    'DB_DATABASE' => 'project'
+    'REDIS_HOSTNAME' => 'redis'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'DB_TABLE_PREFIX' => ''
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.0.13'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DEV_MODE' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'REDIS_DEFAULT_DB' => '0'
+    'DB_PASSWORD' => '•••••••'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'PWD' => '/var/www/project/cms'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => '_ga=GA1.1.274027655.1659353287; 1031b8c41dfff97a311a7ac99863bdc5_username=50018e1617dd961571b965e844d2a23ce972cd5488a00068b5675f99f11a3175a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%221031b8c41dfff97a311a7ac99863bdc5_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; _ga_CXRYXSV0HH=GS1.1.1660958087.4.1.1660958109.0.0.0; CRAFT_CSRF_TOKEN=a721e0262ea3a2cbf0db60a8b94b981a128c0b4fde6e5fa5673ff3681c55ccbaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7Cb007e642bae948cb73f4ce7c13bb37609ffa1908fe98c467b2fe828f8a58cd57nu6jBtwu6B9Xi1LBaPEuyWdJVz17Gnu1gpzhXFo9%7C1%22%3B%7D; _ga_TZZRPDX53X=GS1.1.1661509200.1.0.1661509832.0.0.0; CraftSessionId=c8b5eb03efeba9635e37f12ec531d3dc; _ga_EDRH2ZS120=GS1.1.1661551061.52.1.1661553290.0.0.0'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_REFERER' => 'http://localhost:8888/admin/entries/page/311-landing-page'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8888'
+    'SCRIPT_FILENAME' => '/var/www/project/cms/web/index.php'
+    'PATH_INFO' => ''
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.28.0.4'
+    'REMOTE_PORT' => '64236'
+    'REMOTE_ADDR' => '172.28.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/project/cms/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php/admin/actions/users/session-info?dontExtendSession=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'dontExtendSession=1'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1661722332.3179
+    'REQUEST_TIME' => 1661722332
+    'argv' => [
+        0 => 'dontExtendSession=1'
+    ]
+    'argc' => 1
+]
+
+$_SESSION = [
+    'bd62416aa8538ede709019a5e113eea5__flash' => []
+]  

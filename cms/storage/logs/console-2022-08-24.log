@@ -1,0 +1,1435 @@
+2022-08-24 09:10:19 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091584} 
+2022-08-24 09:10:19 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10326824} 
+2022-08-24 09:10:19 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11859320} 
+2022-08-24 09:10:19 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661332217.6461
+    'REQUEST_TIME' => 1661332217
+    'argv' => [
+        0 => 'craft'
+        1 => 'install/check'
+    ]
+    'argc' => 2
+]  
+2022-08-24 09:10:20 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091664} 
+2022-08-24 09:10:20 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10326904} 
+2022-08-24 09:10:20 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11859400} 
+2022-08-24 09:10:20 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661332219.1464
+    'REQUEST_TIME' => 1661332219
+    'argv' => [
+        0 => 'craft'
+        1 => 'clear-caches/all'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]  
+2022-08-24 09:10:21 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091584} 
+2022-08-24 09:10:21 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10380432} 
+2022-08-24 09:10:21 [console.WARNING] [craft\web\View::createTwig] Twig instantiated before Craft is fully initialized. {"memory":11898816} 
+2022-08-24 09:10:21 [console.WARNING] [craft\elements\db\ElementQuery::prepare] Element query executed before Craft is fully initialized. {"memory":18800944} 
+2022-08-24 09:10:21 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":19024664} 
+2022-08-24 09:10:21 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661332220.5262
+    'REQUEST_TIME' => 1661332220
+    'argv' => [
+        0 => 'craft'
+        1 => 'install/check'
+    ]
+    'argc' => 2
+]  
+2022-08-24 09:10:22 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091656} 
+2022-08-24 09:10:22 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10326896} 
+2022-08-24 09:10:22 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11859392} 
+2022-08-24 09:10:22 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661332221.9121
+    'REQUEST_TIME' => 1661332221
+    'argv' => [
+        0 => 'craft'
+        1 => 'migrate/all'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]  
+2022-08-24 09:10:22 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091584} 
+2022-08-24 09:10:22 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10326824} 
+2022-08-24 09:10:22 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11859320} 
+2022-08-24 09:10:22 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661332222.4183
+    'REQUEST_TIME' => 1661332222
+    'argv' => [
+        0 => 'craft'
+        1 => 'install/check'
+    ]
+    'argc' => 2
+]  
+2022-08-24 09:10:23 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091664} 
+2022-08-24 09:10:23 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10326904} 
+2022-08-24 09:10:23 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11859400} 
+2022-08-24 09:10:23 [console.INFO] [craft\services\ProjectConfig::_applyChanges] Looking for pending changes {"memory":13105128} 
+2022-08-24 09:10:23 [console.INFO] [craft\services\ProjectConfig::_applyChanges] Finalizing configuration parsing {"memory":13106200} 
+2022-08-24 09:10:23 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661332222.9201
+    'REQUEST_TIME' => 1661332222
+    'argv' => [
+        0 => 'craft'
+        1 => 'project-config/apply'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]  
+2022-08-24 09:14:45 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091584} 
+2022-08-24 09:14:45 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10326824} 
+2022-08-24 09:14:45 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11859320} 
+2022-08-24 09:14:45 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661332483.9231
+    'REQUEST_TIME' => 1661332483
+    'argv' => [
+        0 => 'craft'
+        1 => 'install/check'
+    ]
+    'argc' => 2
+]  
+2022-08-24 09:14:47 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091664} 
+2022-08-24 09:14:47 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10326904} 
+2022-08-24 09:14:47 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11859400} 
+2022-08-24 09:14:47 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661332486.0065
+    'REQUEST_TIME' => 1661332486
+    'argv' => [
+        0 => 'craft'
+        1 => 'clear-caches/all'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]  
+2022-08-24 09:14:48 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091584} 
+2022-08-24 09:14:48 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10380432} 
+2022-08-24 09:14:48 [console.WARNING] [craft\web\View::createTwig] Twig instantiated before Craft is fully initialized. {"memory":11898816} 
+2022-08-24 09:14:48 [console.WARNING] [craft\elements\db\ElementQuery::prepare] Element query executed before Craft is fully initialized. {"memory":18800944} 
+2022-08-24 09:14:48 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":19024664} 
+2022-08-24 09:14:48 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661332487.4701
+    'REQUEST_TIME' => 1661332487
+    'argv' => [
+        0 => 'craft'
+        1 => 'install/check'
+    ]
+    'argc' => 2
+]  
+2022-08-24 09:14:49 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091656} 
+2022-08-24 09:14:49 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10326896} 
+2022-08-24 09:14:49 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11859392} 
+2022-08-24 09:14:49 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661332488.8355
+    'REQUEST_TIME' => 1661332488
+    'argv' => [
+        0 => 'craft'
+        1 => 'migrate/all'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]  
+2022-08-24 09:14:50 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091584} 
+2022-08-24 09:14:50 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10326824} 
+2022-08-24 09:14:50 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11859320} 
+2022-08-24 09:14:50 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661332489.4884
+    'REQUEST_TIME' => 1661332489
+    'argv' => [
+        0 => 'craft'
+        1 => 'install/check'
+    ]
+    'argc' => 2
+]  
+2022-08-24 09:14:50 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091664} 
+2022-08-24 09:14:50 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10326904} 
+2022-08-24 09:14:50 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11859400} 
+2022-08-24 09:14:50 [console.INFO] [craft\services\ProjectConfig::_applyChanges] Looking for pending changes {"memory":13105128} 
+2022-08-24 09:14:50 [console.INFO] [craft\services\ProjectConfig::_applyChanges] Finalizing configuration parsing {"memory":13106200} 
+2022-08-24 09:14:50 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661332490.1674
+    'REQUEST_TIME' => 1661332490
+    'argv' => [
+        0 => 'craft'
+        1 => 'project-config/apply'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]  
+2022-08-24 09:41:24 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091264} 
+2022-08-24 09:41:24 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10380112} 
+2022-08-24 09:41:24 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11913960} 
+2022-08-24 09:41:24 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DB_PASSWORD' => '•••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_URL' => 'http://localhost:8888'
+    'HOSTNAME' => '523f2c7a4940'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PHP_VERSION' => '8.0.13'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'DEV_MODE' => '1'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'ALLOW_UPDATES' => '1'
+    'PWD' => '/var/www/project/cms'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'DB_USER' => 'project'
+    'HOME' => '/home/www-data'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DB_SCHEMA' => 'public'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'REDIS_HOSTNAME' => 'redis'
+    'TERM' => 'xterm'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'REDIS_DEFAULT_DB' => '0'
+    'ENVIRONMENT' => 'dev'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'SHLVL' => '2'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'REDIS_PORT' => '6379'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'SITE_NAME' => 'matrixfacades'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'REDIS_CRAFT_DB' => '1'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'DB_DATABASE' => 'project'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'OLDPWD' => '/var/www/project/cms'
+    '_' => '/sbin/su-exec'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661332491.0835
+    'REQUEST_TIME' => 1661332491
+    'argv' => [
+        0 => 'craft'
+        1 => 'queue/listen'
+        2 => '10'
+    ]
+    'argc' => 3
+]  
+2022-08-24 15:08:02 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091584} 
+2022-08-24 15:08:02 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10326824} 
+2022-08-24 15:08:02 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11859320} 
+2022-08-24 15:08:02 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661353681.2652
+    'REQUEST_TIME' => 1661353681
+    'argv' => [
+        0 => 'craft'
+        1 => 'install/check'
+    ]
+    'argc' => 2
+]  
+2022-08-24 15:08:04 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091664} 
+2022-08-24 15:08:04 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10326904} 
+2022-08-24 15:08:04 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11859400} 
+2022-08-24 15:08:04 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661353682.9319
+    'REQUEST_TIME' => 1661353682
+    'argv' => [
+        0 => 'craft'
+        1 => 'clear-caches/all'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]  
+2022-08-24 15:08:05 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091584} 
+2022-08-24 15:08:05 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10380432} 
+2022-08-24 15:08:05 [console.WARNING] [craft\web\View::createTwig] Twig instantiated before Craft is fully initialized. {"memory":11898816} 
+2022-08-24 15:08:05 [console.WARNING] [craft\elements\db\ElementQuery::prepare] Element query executed before Craft is fully initialized. {"memory":18800944} 
+2022-08-24 15:08:05 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":19024664} 
+2022-08-24 15:08:05 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661353684.0928
+    'REQUEST_TIME' => 1661353684
+    'argv' => [
+        0 => 'craft'
+        1 => 'install/check'
+    ]
+    'argc' => 2
+]  
+2022-08-24 15:08:05 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091656} 
+2022-08-24 15:08:05 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10326896} 
+2022-08-24 15:08:05 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11859392} 
+2022-08-24 15:08:05 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661353685.1093
+    'REQUEST_TIME' => 1661353685
+    'argv' => [
+        0 => 'craft'
+        1 => 'migrate/all'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]  
+2022-08-24 15:08:05 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091584} 
+2022-08-24 15:08:05 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10326824} 
+2022-08-24 15:08:05 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11859320} 
+2022-08-24 15:08:05 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661353685.5656
+    'REQUEST_TIME' => 1661353685
+    'argv' => [
+        0 => 'craft'
+        1 => 'install/check'
+    ]
+    'argc' => 2
+]  
+2022-08-24 15:08:06 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091664} 
+2022-08-24 15:08:06 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10326904} 
+2022-08-24 15:08:06 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11859400} 
+2022-08-24 15:08:06 [console.INFO] [craft\services\ProjectConfig::_applyChanges] Looking for pending changes {"memory":13105128} 
+2022-08-24 15:08:06 [console.INFO] [craft\services\ProjectConfig::_applyChanges] Finalizing configuration parsing {"memory":13106200} 
+2022-08-24 15:08:06 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DBGP_IDEKEY' => 'phpstorm'
+    'REDIS_CRAFT_DB' => '1'
+    'REDIS_PORT' => '6379'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'LANGUAGE' => 'C'
+    'HOSTNAME' => '523f2c7a4940'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GIT_ASKPASS' => 'echo'
+    'SHLVL' => '3'
+    'HOME' => '/home/www-data'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'OLDPWD' => '/var/www/project/cms'
+    'ENVIRONMENT' => 'dev'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'REDIS_HOSTNAME' => 'redis'
+    'DB_DATABASE' => 'project'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'PHP_VERSION' => '8.0.13'
+    'COMPOSER_BINARY' => '/usr/local/bin/composer'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'SHELL_VERBOSITY' => '0'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    '_' => '/sbin/su-exec'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'TERM' => 'xterm'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PATH' => '/var/www/project/cms/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'DEV_MODE' => '1'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'ALLOW_UPDATES' => '1'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'SITE_URL' => 'http://localhost:8888'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'REDIS_DEFAULT_DB' => '0'
+    'SITE_NAME' => 'matrixfacades'
+    'DB_PASSWORD' => '•••••••'
+    'PWD' => '/var/www/project/cms'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'DB_SCHEMA' => 'public'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'DB_USER' => 'project'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661353685.9449
+    'REQUEST_TIME' => 1661353685
+    'argv' => [
+        0 => 'craft'
+        1 => 'project-config/apply'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]  
+2022-08-24 15:35:08 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=mysql;dbname=project;port=3306 {"memory":8091264} 
+2022-08-24 15:35:08 [console.INFO] [nystudio107\autocomplete\Autocomplete::registerEventHandlers] Event Handlers installed {"memory":10380112} 
+2022-08-24 15:35:08 [console.INFO] [nystudio107\autocomplete\Autocomplete::generateAutocompleteClasses] Autocomplete classes generated {"memory":11913960} 
+2022-08-24 15:35:08 [console.INFO] [application] Request context:
+$_GET = []
+
+$_POST = []
+
+$_COOKIE = []
+
+$_FILES = []
+
+$_SERVER = [
+    'DB_PASSWORD' => '•••••••'
+    'BACKUP_ON_UPDATE' => '0'
+    'SITE_URL' => 'http://localhost:8888'
+    'HOSTNAME' => '523f2c7a4940'
+    'ENABLE_GQL_CACHING' => 'false'
+    'PHP_VERSION' => '8.0.13'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'GPG_KEYS' => '1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F'
+    'DEV_MODE' => '1'
+    'DB_TABLE_PREFIX' => ''
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'ALLOW_UPDATES' => '1'
+    'PWD' => '/var/www/project/cms'
+    'LD_PRELOAD' => '/usr/lib/preloadable_libiconv.so php'
+    'DB_USER' => 'project'
+    'HOME' => '/home/www-data'
+    'ALLOW_ADMIN_CHANGES' => '1'
+    'DB_SCHEMA' => 'public'
+    'ENABLE_TEMPLATE_CACHING' => '0'
+    'PHP_SHA256' => 'cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52'
+    'PHPIZE_DEPS' => 'autoconf         dpkg-dev         dpkg         file         g++         gcc         libc-dev         make         pkgconf         re2c         wget'
+    'REDIS_HOSTNAME' => 'redis'
+    'TERM' => 'xterm'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz'
+    'REDIS_DEFAULT_DB' => '0'
+    'ENVIRONMENT' => 'dev'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'SHLVL' => '2'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'REDIS_PORT' => '6379'
+    'DBGP_IDEKEY' => 'phpstorm'
+    'SITE_NAME' => 'matrixfacades'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'REDIS_CRAFT_DB' => '1'
+    'RUN_QUEUE_AUTOMATICALLY' => '0'
+    'DB_DATABASE' => 'project'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.0.13.tar.xz.asc'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'WEB_ROOT_PATH' => '/var/www/project/cms/web'
+    'OLDPWD' => '/var/www/project/cms'
+    '_' => '/sbin/su-exec'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1661353686.481
+    'REQUEST_TIME' => 1661353686
+    'argv' => [
+        0 => 'craft'
+        1 => 'queue/listen'
+        2 => '10'
+    ]
+    'argc' => 3
+]  

@@ -31,7 +31,12 @@ return [
         'subRight' => true,
     ],
     'defaultTokenDuration' => 'P2W',
-    'enableCsrfProtection' => true,
+    'enableCsrfProtection' => false,
+    // ($_SERVER['HTTP_ORIGIN'] !=  App::env('CRAFT_API_URL') &&
+    //   $_SERVER['HTTP_ORIGIN'] != App::env('FRONTEND_URL') &&
+    //   $_SERVER['HTTP_ORIGIN'] != App::env('FRONTEND_URL_PORT')
+    // )
+    
     'generateTransformsBeforePageLoad' => true,
     'maxCachedCloudImageSize' => 3000,
     'maxUploadFileSize' => '100M',

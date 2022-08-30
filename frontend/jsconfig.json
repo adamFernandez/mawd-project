@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "~~/*": ["./*"],
+      "@@/*": ["./*"],
+      "@root/*": ["./*"],
+      "@pages/*": ["pages/*"],
+      "@c/*": ["components/*"],
+      "@assets/*": ["assets/*"],
+      "@utils/*": ["utils/*"],
+      "@store": ["store"],
+      "@store/*": ["store/*"],
+      "@mixins/*": ["mixins/*"],
+      "@gql/*": ["gql/*"],
+    }
+  },
+  "exclude": ["node_modules", ".nuxt", "dist"]
+}

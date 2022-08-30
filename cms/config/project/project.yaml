@@ -1,4 +1,19 @@
-dateModified: 1651529655
+dateModified: 1661850505
+elementSources:
+  craft\elements\Asset:
+    -
+      disabled: false
+      key: 'volume:5c642d7e-b16b-4836-9575-668d75d242e5' # Site
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - uploader
+        - link
+      type: native
+    -
+      key: 'folder:34f058d0-d16c-436b-8513-c46d815c95d0'
+      type: native
 email:
   fromEmail: andrew@nystudio107.com
   fromName: Craft
@@ -13,20 +28,66 @@ fs:
     url: '@web/assets/site'
 meta:
   __names__:
+    1d8804e1-f718-440e-b121-235162ea54e0: Page # Page
     1f716763-7f9e-4ffd-9f8c-2c0e7ccf15f7: Selected # Selected
+    2facf7b3-ec5b-431a-b6a0-0be4918fc269: Class # Class
+    4e41f2e1-6f74-4be4-9363-c887bfc9626a: List # List
     5c642d7e-b16b-4836-9575-668d75d242e5: Site # Site
     5da841b1-ca0d-46ff-8bb1-04d6c889ac54: English # English
+    05f0cb1e-9f1c-4cae-ab9e-e7b809cfd069: 'link to button' # link to button
+    6a9ddb91-2074-41c3-a8a0-aac8037c162a: background # background
     7a591e66-18df-490d-92b5-3fd3a3986f09: default # default
+    7b3c4785-007a-4aef-9f83-3f9e1892b2cf: Drops # Drops
+    7e994c65-c505-4b03-9e6f-f20efc4e40fc: 'Image Caption' # Image Caption
     8f804a45-ad1d-4a71-b0b4-6df2040dc205: Nuts # Nuts
+    9cf90e33-3608-45df-b20a-7dded3fcaa6f: Animation # Animation
+    10c5668c-6483-4f8d-8b14-569108d3ce8f: 'Link Title' # Link Title
+    11a5e7c6-1d56-4ac0-8389-312c442f19fd: Animation # Animation
+    30caf2ce-4a7e-4fe8-b25e-55f11138f734: Link # Link
+    36a37a75-a95b-42aa-85a5-25ef76a38a90: 'Local Navigation' # Local Navigation
+    45f654ae-7434-4eed-97a9-206d3b7645e0: Page # Page
+    63b48870-2691-4ed0-a49e-d52aa49bd016: Image # Image
+    65bfb171-54f9-4bd2-a3de-2d9d84b421ab: Text # Text
+    68b42921-4b94-4951-8648-21bb18d51a5a: Api # Api
     071aeb2b-e8eb-4bcf-825c-dd016745f107: Flavor # Flavor
+    073ffdba-f623-4425-ba7a-4aca2d8f1e7a: 'New List' # New List
+    88e67cad-9bf3-48a1-8efd-3c4c9b24c220: 'Section Block' # Section Block
+    89bdafa6-9ac3-429b-8f3f-d2fa1aec1987: 'Link To' # Link To
+    89bf0220-d3bb-4d79-ac39-7b834be550e9: Info # Info
+    403cbc9c-9fe1-4fab-b2c8-3fb85de0eda1: Text # Text
+    494a9686-e025-4b2d-9da3-5edf0fe02324: 'Section Title' # Section Title
+    650c31ff-38ed-4466-bf70-4de9476c7de4: pageTitle # pageTitle
+    693a4a92-27d0-4255-a760-68e45bcb3887: 'Rich Text' # Rich Text
+    697ed8d4-a2ed-4d39-b873-94a1bd9e9b61: Header # Header
+    905da369-6eed-4118-a865-63eb354975d4: Image # Image
     4828c563-32cf-4021-afeb-1d5e38f31daf: 'Accent Color' # Accent Color
+    5970ad3b-7d12-4eee-8802-e082f963143b: 'Info Panel' # Info Panel
     6005c2f9-5d85-4442-b712-22e070096ac8: 'Public Schema' # Public Schema
     6359fe58-db81-4ee6-94eb-e9f4e3c61da6: Notes # Notes
+    93241d71-a184-4836-9aa5-735abab93bd8: Paragraph # Paragraph
+    699251b5-311f-4cd5-b2d6-070cb1195242: 'Button Text ' # Button Text 
+    92242452-f186-4394-965a-279336553f1d: Image # Image
+    a0f59507-e590-47b1-bd53-cf6cd4ac2db7: Text # Text
+    a4ddd471-00d4-4475-a59f-9d15f16f3b97: 'Section Block' # Section Block
+    ab09d404-f913-41d9-9d0c-f588c7d3692c: Entries # Entries
+    b9fedc46-0f5d-4de6-8ea4-b4c3cc96e918: Info # Info
     c2e2b69d-127d-4afe-8032-0209247e70de: default # default
+    c75f8230-40a4-462e-bd8e-ee75a0e65489: Alignment # Alignment
+    c164b1cf-9cd6-4cea-8349-432bac64860a: Global # Global
+    c537eedf-7d39-4871-94a3-ecf19db96145: 'Section Title' # Section Title
+    c9374344-bf77-4688-a943-48c2840b2a1e: Item # Item
+    cd985d2d-e740-4b54-b246-2344e23f92f7: Text # Text
     dd87a305-fb8e-4bc0-965b-8afadc876934: Syrup # Syrup
+    e90efaa9-b0df-4218-9afe-de02e375adaf: Image # Image
     e7500fc4-6a5e-4656-8947-27c47c0c9dd8: Whip # Whip
+    e9345b34-81d3-4355-8abf-cbea2c9d82e5: 'Section Title' # Section Title
+    ecbe8647-c5f3-40a7-9fb2-633795dde928: 'Link Url' # Link Url
+    f9a83780-229f-41e0-851e-1bc33b43a67a: 'Section Group' # Section Group
+    f73e39e6-6a45-476f-985f-30f311555a10: 'Button Slug' # Button Slug
     f652db8c-edc2-4a66-8241-2fb0787110ee: 'Primary Color' # Primary Color
     f89601e9-4ba9-4a48-9e99-350aa9914912: default # default
+    fb59034d-1ad5-43a0-9984-870491e72b82: Text # Text
+    fd0433ae-2ce6-401f-92eb-591244c42d63: Image # Image
 plugins:
   redactor:
     edition: standard
@@ -39,3 +100,10 @@ system:
   retryDuration: 60
   schemaVersion: 4.0.0.9
   timeZone: America/New_York
+users:
+  allowPublicRegistration: false
+  deactivateByDefault: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true

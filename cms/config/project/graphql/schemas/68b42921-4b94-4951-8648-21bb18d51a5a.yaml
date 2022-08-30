@@ -1,0 +1,15 @@
+isPublic: false
+name: Api
+scope:
+  - 'sites.5da841b1-ca0d-46ff-8bb1-04d6c889ac54:read' # English
+  - 'elements.drafts:read'
+  - 'elements.revisions:read'
+  - 'elements.inactive:read'
+  - 'sections.7b3c4785-007a-4aef-9f83-3f9e1892b2cf:read' # Drops
+  - 'entrytypes.ab09d404-f913-41d9-9d0c-f588c7d3692c:read' # Entries
+  - 'sections.b9fedc46-0f5d-4de6-8ea4-b4c3cc96e918:read' # Info
+  - 'entrytypes.89bf0220-d3bb-4d79-ac39-7b834be550e9:read' # Info
+  - 'sections.1d8804e1-f718-440e-b121-235162ea54e0:read' # Page
+  - 'entrytypes.45f654ae-7434-4eed-97a9-206d3b7645e0:read' # Page
+  - 'volumes.5c642d7e-b16b-4836-9575-668d75d242e5:read' # Site
+  - 'usergroups.everyone:read'

@@ -1,0 +1,23 @@
+// --------------------------------------------------------------------------
+// list.sass
+// --------------------------------------------------------------------------
+// This mixin outputs a bulleted list base on the bullet color passed in
+// --------------------------------------------------------------------------
+
+=custom-list($bullet-color: $base-color)
+  list-style: none
+  margin: 0
+  padding: 0
+  li
+    padding-left: spacing(2)
+    +margin(10px null)
+    position: relative
+    @extend %copy
+    font-size: 20px
+    &:before
+      +size(7px)
+      +position(absolute, 5px null null 0)
+      background-color: $bullet-color
+      content: ""
+      display: block
+      border-radius: 50%

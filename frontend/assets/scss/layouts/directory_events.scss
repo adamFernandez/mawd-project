@@ -1,0 +1,676 @@
+.directory-events {
+  &__instagram {
+    .instagram_gallery {
+      display: flex;
+      flex-wrap: wrap;
+      a {
+        width: 23%;
+        height: auto;
+        margin: 10px;
+        position: relative;
+        img {
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  &__link {
+    h3 {
+      @include FoundersGroteskNormal-20;
+      display: block;
+      margin-top: 1rem;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__hero {
+    // margin-top: -80px;
+    &__title {
+      @include DrukCondensed-180;
+      color: $white;
+      text-transform: uppercase;
+      font-size: calc(100px + (240 - 100) * (100vw - 640px) / (1800 - 640));
+      line-height: calc(100px + (240 - 100) * (100vw - 640px) / (1800 - 640));
+    }
+    &__overlay {
+      z-index: 1;
+      position: relative;
+    }
+    .uk-position-center {
+      top: calc(50% + 80px);
+    }
+    &__cover {
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      position: relative;
+      img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__meta {
+    padding: 0 0 0 1rem;
+    box-sizing: border-box;
+    @media (min-width: 768px) {
+      padding: 0;
+      // margin-top: 2rem;
+    }
+    &__image {
+      height: 100px;
+    }
+    &__title {
+      @include FoundersGroteskMedium-28;
+      margin: 0rem 0 0.1rem 0;
+      @media (min-width: 768px) {
+        @include FoundersGroteskMedium-24;
+        margin: 1rem 0 0.1rem 0;
+      }
+      color: $black;
+
+      line-height: 1;
+    }
+    &__desc {
+      @include FoundersGroteskNormal-28;
+      @media (min-width: 768px) {
+        @include FoundersGroteskNormal-24;
+      }
+      margin: 0 0 1rem 0;
+      color: $black;
+      line-height: 1;
+    }
+    &__city {
+      @include FoundersGroteskNormal-20;
+      margin: 0;
+      color: $black;
+      line-height: 1.2;
+      box-sizing: border-box;
+      padding: 0;
+    }
+    &__icon {
+      width: 18px;
+      height: 23px;
+      margin: 0 0.5rem 0 0;
+    }
+  }
+
+  &__event {
+    position: relative;
+    transition: opacity 0.5s ease-out;
+    opacity: 1;
+    &--loading {
+      opacity: 0;
+    }
+    &__name {
+      @include DrukCondensed-120;
+      text-transform: uppercase;
+      color: $black;
+      margin-bottom: -40px !important;
+      line-height: 0.9;
+    }
+    &__card {
+      padding-right: 100px;
+      // padding-top: 35px;
+      @media screen and (max-width: 960px) {
+        padding-right: 50px;
+      }
+      @media screen and (min-width: 961px) {
+        padding-right: 80px;
+      }
+    }
+    &__description {
+      border-top: 1px solid $black;
+      border-bottom: 1px solid $black;
+      padding: 35px 0px 25px 0px;
+      margin-bottom: 40px;
+      &__image {
+        width: 125px;
+        height: 125px;
+        img {
+          width: 125px;
+          height: 125px;
+        }
+      }
+      &__title {
+        @include FoundersGroteskNormal-20;
+        color: $black;
+        margin-bottom: 10px;
+        line-height: 1.1;
+      }
+      &__desc {
+        @include FoundersGroteskNormal-24;
+        color: $black;
+        margin-bottom: 10px;
+        line-height: 1.1;
+      }
+      &__icon {
+        width: 18px;
+        height: 23px;
+      }
+      &__city {
+        @include text-block;
+        font-weight: 300;
+        margin-top: 5px;
+        margin-left: 10px;
+      }
+    }
+    &__tags {
+      // Only for soft launch
+      .tags__item {
+        &:hover {
+          background: $white;
+          color: $black;
+        }
+        &:focus {
+          color: $black;
+        }
+      }
+    }
+    &__picture {
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      border-radius: 120px;
+      overflow: hidden;
+      img {
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+      }
+      &__map {
+        width: 200px;
+        height: 200px;
+        padding-bottom: 0;
+      }
+    }
+    &__about {
+      border-top: 1px solid $black;
+      p {
+        @include text-block;
+        line-height: 1.4;
+        font-weight: 300;
+        padding-top: 20px;
+      }
+      &__title {
+        margin-bottom: 10px;
+        @include text-block;
+        font-weight: 300;
+      }
+    }
+    &__pagination {
+      display: flex;
+      align-items: center;
+      // justify-content: space-between;
+      margin-bottom: 10px;
+      margin-top: 1rem;
+      p {
+        @include FoundersGroteskMono-12;
+        color: black;
+        margin: 0 1rem 0 0;
+        padding: 0;
+      }
+      a {
+        @include FoundersGroteskMono-12;
+        color: black;
+        margin: 0;
+        padding: 0;
+      }
+      span {
+        cursor: pointer;
+      }
+    }
+    &__details {
+      &__dl {
+        display: flex;
+        align-items: center;
+        justify-content: stretch;
+
+        padding: 20px 0;
+        margin: 0;
+        border-bottom: 1px solid #d1d1d1;
+        padding-bottom: 10px;
+
+        dt {
+          width: 25%;
+          @include FoundersGroteskMono-12;
+          line-height: 0.9;
+          color: black;
+          margin: 0;
+          padding: 0;
+          @media screen and (min-width: 768px) {
+            margin: 10px 0 10px 0;
+          }
+        }
+        dd {
+          width: 75%;
+          display: inline-block;
+          display: flex;
+          margin: 0;
+          padding: 0;
+
+          a {
+            @include FoundersGroteskNormal-18;
+            line-height: 0.9;
+            color: black;
+            padding-right: 10px;
+          }
+        }
+        &--large {
+          display: block;
+          border-bottom: none;
+          dt {
+            width: 100%;
+            @include FoundersGroteskMono-14;
+          }
+          dd {
+            width: 100%;
+            a {
+              @include FoundersGroteskNormal-20;
+            }
+          }
+        }
+      }
+      &:first-child {
+        border-top: 1px solid #d1d1d1;
+      }
+      // border-bottom: 1px solid #d1d1d1;
+      &__item {
+        &__title {
+          @include FoundersGroteskMono-12;
+          color: black;
+          margin-top: 25px;
+          margin-bottom: 10px;
+        }
+        &__subtitle {
+          @include FoundersGroteskNormal-16;
+          color: black;
+          margin-top: 0;
+          &__link {
+            color: $black;
+            &:hover {
+              color: $black;
+            }
+          }
+        }
+      }
+      &__social-media {
+        @media screen and (max-width: 640px) {
+          padding-left: 20px;
+          padding-top: 11px;
+        }
+      }
+    }
+    // Styles for mobile
+    &--mobile {
+      .directory-events__event__card {
+        padding-right: 0;
+      }
+      .directory-events__event__description {
+        border: none;
+        @media screen and (max-width: 640px) {
+          margin-bottom: 0px;
+          padding: 0;
+        }
+      }
+      .directory-events__event__picture {
+        @media screen and (max-width: 640px) {
+          margin-bottom: 20px;
+        }
+      }
+      .directory-events__event__name {
+        @include FoundersGroteskMedium-20;
+      }
+      .directory-events__event__details__item__link {
+        @include FoundersGroteskMedium-20;
+      }
+      .directory-events__event__description__desc {
+        @include FoundersGroteskNormal-20;
+      }
+      .directory-events__event__description__city {
+        @include FoundersGroteskNormal-16;
+      }
+      .directory-events__event__details__item {
+        display: flex;
+        flex-direction: row;
+        .directory-events__event__details__item__title {
+          @include FoundersGroteskMono-12;
+          color: $black;
+          margin: 0;
+          padding: 20px;
+          min-width: 100px;
+          @media screen and (max-width: 500px) {
+            min-width: 70px;
+          }
+        }
+        .directory-events__event__details__item__social {
+          padding: 10px 20px;
+          min-width: 100px;
+          @media screen and (max-width: 500px) {
+            min-width: 70px;
+          }
+        }
+        .directory-events__event__details__item__subtitle {
+          margin: 0;
+        }
+        .directory-events__event__details__item__subtitle__link {
+          @include FoundersGroteskNormal-16;
+          color: $black;
+          margin: 0;
+          padding: 20px;
+        }
+      }
+    }
+
+    // Styles for map detail
+    &--map {
+      .directory-events__event__description__title {
+        @include FoundersGroteskMedium-24;
+        margin: 0;
+        padding: 0;
+      }
+      .directory-events__event__description__desc {
+        @include FoundersGroteskNormal-20;
+        margin: 0px;
+        padding: 0px;
+      }
+      .directory-events__event__description__city {
+        @include FoundersGroteskNormal-16;
+      }
+      .directory-events__event__description {
+        border: none;
+        padding: 0;
+      }
+      .directory-events__event__details__item__title {
+        @include FoundersGroteskMono-16;
+        color: black;
+        margin-top: 0;
+        padding: 0;
+      }
+      .directory-events__event__details__item__detail {
+        @include FoundersGroteskNormal-20;
+        color: black;
+        margin-top: 0;
+        padding: 0;
+      }
+    }
+
+    &__accordion {
+      border-bottom: 1px solid $alto;
+      &__item {
+        border-top: 1px solid $alto;
+        margin-top: 0 !important;
+        &__title {
+          @include FoundersGroteskNormal-24;
+          color: $black;
+          padding: 20px;
+          span {
+            display: block;
+            margin-top: 7px;
+            color: $black;
+          }
+          @media screen and (max-width: 500px) {
+            min-width: 70px;
+          }
+        }
+        &__text {
+          padding-top: 0;
+          border-top: none;
+          p {
+            margin: 0;
+
+            padding: 20px;
+          }
+        }
+        .uk-accordion-title::before {
+          border: 2.5px solid $black !important;
+          border-radius: 20px;
+          background-image: url("/images/icon__accordion--open.svg");
+          background-position: 46% 46%;
+        }
+        &.uk-open > .uk-accordion-title::before {
+          background-image: url("/images/icon__accordion--close.svg");
+          background-position: 46% 46%;
+        }
+        .uk-accordion-content {
+          border-top: 1px solid $alto;
+          margin-top: 0;
+        }
+        &__panel {
+          display: flex;
+          flex-direction: row;
+          &__title {
+            @include FoundersGroteskMono-12;
+            color: $black;
+            margin: 0;
+            padding: 20px;
+            min-width: 100px;
+            @media screen and (max-width: 500px) {
+              min-width: 70px;
+            }
+          }
+          &__subtitle {
+            @include FoundersGroteskNormal-16;
+            color: $black;
+            margin: 0;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+  &__list {
+    &::after {
+      content: "";
+      position: absolute;
+      top: -100px;
+      right: 0px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 100px 66vw;
+      border-color: transparent transparent $white transparent;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: 0px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 50px 0 0 34vw;
+      border-color: transparent transparent transparent $white;
+    }
+  }
+  &__our-work {
+    background-color: lighten($black, 98%);
+    position: relative;
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 70vw 45px 0;
+      border-color: transparent $white transparent transparent;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+    &__container {
+      .directory-events__our-work__title {
+        padding-left: 30px;
+        @media screen and (min-width: 960px) {
+          padding-left: 40px;
+        }
+      }
+    }
+    &__title {
+      @include H3-Grotesk-24;
+    }
+    &__carousel {
+      // overflow: hidden;
+      // margin: 0 auto;
+      // border: 1px solid red;
+      &__numbers {
+        @include H3-Grotesk-24;
+        font-weight: 300;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          object-position: center;
+          object-fit: contain;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &__item {
+        &__icon {
+          position: relative;
+          z-index: 99;
+          opacity: 0;
+          transition: all 0.3s ease-in;
+          img {
+            width: 41px !important;
+            height: 41px !important;
+          }
+        }
+        &__image {
+          img {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        &:hover {
+          .directory-events__our-work__carousel__item__icon {
+            opacity: 1;
+          }
+        }
+      }
+      &__arrow {
+        &--right {
+          z-index: 999;
+          width: 48px;
+          & svg {
+            display: none;
+          }
+        }
+        &--left {
+          z-index: 999;
+          width: 48px;
+          & svg {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &__work-with {
+    &__title {
+      @include H3-Grotesk-24;
+    }
+    &__name {
+      @extend .home__creatives__item__name;
+    }
+    &__company {
+      @extend .home__creatives__item__company;
+    }
+    &__link {
+      @include FoundersGroteskMedium-16;
+      color: $dove-gray;
+      &:hover {
+        color: $dove-gray;
+      }
+    }
+    &__text {
+      @include text-block;
+      font-weight: 300;
+    }
+  }
+  &__instagram-feed {
+    background-color: lighten($black, 98%);
+    position: relative;
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0px;
+    //   left: 0px;
+    //   width: 0;
+    //   height: 0;
+    //   border-style: solid;
+    //   border-width: 45px 70vw 0 0;
+    //   border-color: #ffffff transparent transparent transparent;
+    // }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -45px;
+      left: 0px;
+      right: 0px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 45px 100vw 0 0;
+      border-color: #fafafa transparent transparent transparent;
+    }
+    &__title {
+      @include H3-Grotesk-24;
+    }
+    &__image {
+      width: 100%;
+    }
+    &__link {
+      text-decoration: none !important;
+    }
+    &__text {
+      @include FoundersGroteskNormal-16;
+      line-height: 1.2;
+      color: $black;
+      font-weight: 300;
+      // border-bottom: 1px solid $black;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      text-decoration: none !important;
+      padding: 0 50px 50px 0;
+    }
+    &__date {
+      @extend .directory-events__event__details__item__title;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    &__icon {
+      width: 30px !important;
+      height: 30px !important;
+    }
+  }
+  &__cta {
+    margin-top: 205px;
+    margin-bottom: 160px;
+  }
+  &__register {
+    background-color: $lightning-yellow;
+    padding: 40px 0px 150px 0px;
+    &__title {
+      @extend .home__newsletter__title;
+    }
+    &__text {
+      @include text-block;
+    }
+    .home__newsletter__form__input {
+      background: transparent;
+    }
+  }
+}

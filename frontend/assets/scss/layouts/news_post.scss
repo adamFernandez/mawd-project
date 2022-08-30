@@ -1,0 +1,142 @@
+.news_post {
+  &__hero {
+    &__image-container {
+      position: relative;
+      &::before {
+        z-index: 999;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 15px 0 0 190px;
+        border-color: transparent transparent transparent $white;
+        // @media screen and (max-width: 640px) {
+        //     border-width: 0 100px 35px  0;
+        // }
+      }
+      &::after {
+        z-index: 999;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 30px 360px;
+        border-color: transparent transparent $white transparent;
+        // @media screen and (max-width: 640px) {
+        //     border-width: 0 0 80px 100px;
+        // }
+      }
+      &__image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+    &__content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__date {
+        @extend .news__content__featured-article__date;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+      &__title {
+        @include DrukCondensed-120;
+        text-align: center;
+        text-transform: uppercase;
+        color: $black;
+        margin-top: 0;
+        line-height: 0.9;
+        padding: 0 20px;
+      }
+    }
+  }
+  &__content {
+    &__desc {
+      border-top: 1px solid $black;
+      border-bottom: 1px solid $black;
+      &__date {
+        @extend .directory-profiles__profile__details__item__title;
+        margin-top: 15px;
+        text-transform: uppercase;
+      }
+      &__label {
+        @extend .directory-profiles__profile__details__item__title;
+        text-transform: uppercase;
+      }
+      &__item {
+        @extend .directory-profiles__profile__details__item__subtitle;
+        text-transform: uppercase;
+      }
+      &__tags {
+        margin-bottom: 15px;
+      }
+      &__share {
+        margin-top: 20px;
+      }
+    }
+    &__lead-text {
+      @include FoundersGroteskMedium-34;
+      color: $black;
+      padding: 0 30px;
+      @media screen and (max-width: 960px) {
+        padding: 0;
+        margin-top: 30px;
+      }
+    }
+    &__text {
+      @include FoundersGroteskNormal-24;
+      color: $black;
+      padding: 0 30px;
+      @media screen and (max-width: 960px) {
+        padding: 0;
+      }
+      a {
+        color: $thunderbird;
+      }
+    }
+    &__image {
+      margin: 30px 0;
+      &__caption {
+        @include FoundersGroteskMono-12;
+        color: $black;
+        text-transform: uppercase;
+        margin-top: 5px;
+      }
+    }
+  }
+  &__related-articles {
+    &__title {
+      @include DrukCondensed-56-to-48;
+      color: $black;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 90px;
+    }
+    &__posts {
+      &__date {
+        @extend .news__content__posts__date;
+        text-transform: uppercase;
+      }
+      &__title {
+        @extend .news__content__posts__title;
+      }
+    }
+  }
+}
